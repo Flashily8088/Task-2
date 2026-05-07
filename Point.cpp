@@ -1,6 +1,8 @@
 #include "Point.h"
 #include "iostream"
 
+Point::Point(const int a = 0, const int b = 0) : x(a), y(b) {}
+Point::Point(pair<const int, const int> p) : x(p.first), y(p.second) {}
 ostream& operator<<(ostream& os, const Point& p)
 {
 	cout << "(" << p.x << "; " << p.y << ")";
