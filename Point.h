@@ -27,7 +27,7 @@ public:
 	* @param a - абсцисса (по умолчанию 0)
 	* @param b - ордината (по умолчанию 0)
 	*/
-	Point(pair<const int, const int> p) : x(p.first), y(p.second) {}
+	Point(pair<const int, const int> p);
 	/**
 	* @breaf оператор вывода
 	* @param os - поток вывода
