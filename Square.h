@@ -34,17 +34,17 @@ private:
 	* @breaf определяет можно ли по заданным точкам построить квадрат
 	* @return true, если можно построить квадрат
 	*/
-	bool is_square();
+	bool is_square() const;
 	/**
 	* @breaf считьает сторону квадрата
 	* @return посчитанное значение
 	*/
-	double side();
+	double side() const;
 	/**
 	* @breaf считьает диагональ квадрата
 	* @return посчитанное значение
 	*/
-	double diagonal();
+	double diagonal() const;
 public:
 	/**
 	* @breaf конструктор по умолчанию
@@ -57,7 +57,7 @@ public:
 	* @param C - вершина квадрата
 	* @param D - вершина квадрата
 	*/
-	Square(Point E, Point F, Point G, Point H);
+	Square(const Point& E, const Point& F, const Point& G, const Point& H);
 	/**
 	* @breaf конструктор
 	* @param p1 - пара координат вершины квадрата
@@ -70,12 +70,12 @@ public:
 	* @breaf считывает сторону квадрата
 	*  * @return считанное значение
 	*/
-	double get_a();
+	double get_a() const;
 	/**
 	* @breaf считывает диагональ квадрата
 	*  * @return считанное значение
 	*/
-	double get_d();
+	double get_d() const;
 	/**
 	* @breaf оператор вывода
 	* @param os - поток вывода
@@ -106,27 +106,27 @@ public:
 	* @breaf преобразовывет в строку
 	*  * return строку
 	*/
-	string ToString();
+	string ToString() const;
 	/**
 	* @breaf Расчёт площади
 	* @return рассчитанное значение
 	 */
-	double S();
+	double S() const;
 	/**
 	* @breaf Расчёт периметра
 	* @return рассчитанное значение
 	 */
-	double P();
+	double P() const;
 	/**
 	* @breaf Расчёт радиуса описанной около квадрата окружности
 	* @return рассчитанное значение
 	 */
-	double R();
+	double R() const;
 	/**
 	* @breaf Расчёт радиуса вписанной в квадрат окружности
 	* @return рассчитанное значение
 	 */
-	double r();
+	double r() const;
 };
 
 
