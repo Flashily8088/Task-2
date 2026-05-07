@@ -21,7 +21,7 @@ public:
 	* @param a - абсцисса (по умолчанию 0)
 	* @param b - ордината (по умолчанию 0)
 	*/
-	Point(const int a = 0, const int b = 0) : x(a), y(b) {}
+	Point(const int a = 0, const int b = 0);
 	/**
 	* @breaf конструктор 
 	* @param a - абсцисса (по умолчанию 0)
