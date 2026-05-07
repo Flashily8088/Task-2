@@ -27,7 +27,7 @@ bool Square::is_square() {
 	}
 	else return false;
 }
-double Square::side()
+double Square::side() const
 {
 	double ab = distance(A, B);
 	double bc = distance(B, C);
@@ -39,7 +39,7 @@ double Square::side()
 	sort(d, d + 6);
 	return d[0];
 }
-double Square::diagonal() {
+double Square::diagonal() const {
 	double ab = distance(A, B);
 	double bc = distance(B, C);
 	double cd = distance(C, D);
@@ -50,7 +50,7 @@ double Square::diagonal() {
 	sort(d, d + 6);
 	return d[5];
 }
-Square::Square(Point E, Point F, Point G, Point H) : A(E), B(F), C(G), D(H)
+Square::Square(const Point& E, const Point& F, const Point& G, const Point& H) : A(E), B(F), C(G), D(H)
 {
 	if (is_square()) {
 		a = side();
@@ -75,12 +75,12 @@ Square::Square(pair<const int, const int> p1, pair<const int, const int> p2, pai
 	}
 }
 
-double Square::get_a()
+double Square::get_a() const
 {
 	return this->a;
 }
 
-double Square::get_d()
+double Square::get_d() const
 {
 	return this->d;
 }
@@ -96,28 +96,28 @@ bool Square::operator!=(const Square& s) const
 	return !(*this == s);
 }
 
-string Square::ToString()
+string Square::ToString() const
 {
 	string str = "A side of square a = " + to_string(this->a) + "A diagonal of square d = " + to_string(this->d);
 	return str;
 }
 
-double Square::S()
+double Square::S() const
 {
 	return pow(a, 2);
 }
 
-double Square::P()
+double Square::P() const
 {
 	return 4 * a;
 }
 
-double Square::R()
+double Square::R() const
 {
 	return d / 2.0;
 }
 
-double Square::r()
+double Square::r() const
 {
 	return a / 2.0;
 }
