@@ -26,12 +26,12 @@ bool Point::operator!=(const Point& p) const
 	return !(*this == p);
 }
 
-int Point::get_x()
+int Point::get_x() const
 {
 	return x;
 }
 
-int Point::get_y()
+int Point::get_y() const
 {
 	return y;
 }
