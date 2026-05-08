@@ -41,7 +41,7 @@ public:
 	* @param p - точка
 	* @return поток ввода
 	*/
-	friend istream& operator>>(istream& is, const Point& p);
+	friend istream& operator>>(istream& is, Point& p);
 	/**
 	* @breaf сравнивает две точки
 	* @param p - точка
