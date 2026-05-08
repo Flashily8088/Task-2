@@ -9,7 +9,7 @@ ostream& operator<<(ostream& os, const Point& p)
 	return os;
 }
 
-istream& operator>>(istream& is, const Point& p)
+istream& operator>>(istream& is, Point& p)
 {
 	cin >> p.x >> p.y;
 	return is;
